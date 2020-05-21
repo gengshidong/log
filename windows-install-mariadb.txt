@@ -1,0 +1,18 @@
+https://downloads.mariadb.org/
+进入bin
+管理员运行cmd
+\mysqld.exe --install mariadb
+.\mysql_install_db -d D:\develop\mariadb-10.4.7-winx64\data  //根据自己的安装路径
+net start mariadb --启动
+net stop mariadb --关闭
+.\mysql.exe -uroot
+show variables like 'character%';
+set character_set_client=utf8;
+set character_set_connection=utf8;
+set character_set_database=utf8;
+set character_set_results=utf8;
+set character_set_server=utf8;
+show variables like 'character%';
+
+
+参考链接： https://www.cnblogs.com/shuimutong/p/11361705.html
